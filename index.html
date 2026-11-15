@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-y+C7xLrK7VZlIsX6z8B4Gly6513GJmostSyXgKC0lUo=' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-xTizO9CfeZJKDpGDDcsi2bCw6FU6ZN2wJqyNj6X2zkE=' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>El Sastre · Cervecería en la Plaza de la Constitución, Socuéllamos</title>
@@ -23,7 +23,7 @@
   --shade-top-alpha: 0; --shade-mid-alpha: 0; --shade-bottom-alpha: 0;
   --blur-tint: 74, 38, 26;
   --title-y: 0px; --title-scale: 1; --title-opacity: 1;
-  --split-left-x: 0vw; --split-right-x: 0vw; --split-y: 0px; --split-scale: 1;
+  --split-left-x: 0vw; --split-right-x: 0vw; --split-y: 0px; --split-scale: 1.06;
   --frame2-opacity: 1; --frame2-scale: 1.06; --frame3-opacity: 0; --frame3-scale: 1.08;
   --intro-copy-y: 0px; --intro-copy-opacity: 1;
   --panel2-opacity: 0; --panel2-y: calc(-50% + 58px);
@@ -385,7 +385,7 @@ dialog .cap button { min-height: 44px; padding: 0 20px; border-radius: 999px; ba
     set('--shade-bottom-alpha', (frame2.active * .35 + sightsEnter * .45).toFixed(4));
     set('--title-y', `${introExit * -210}px`); set('--title-scale', (1 - introExit * .08).toFixed(4)); set('--title-opacity', (1 - introExit).toFixed(4));
     set('--split-left-x', `${-splitDrift * 78}vw`); set('--split-right-x', `${splitDrift * 78}vw`);
-    set('--split-y', `${sharedY - splitDrift * 120}px`); set('--split-scale', (1 + sharedScale + frame2.enter * .5).toFixed(4));
+    set('--split-y', `${sharedY - splitDrift * 120}px`); set('--split-scale', (1.06 + sharedScale + frame2.enter * .5).toFixed(4));
     set('--frame2-opacity', (1 - frame3.enter).toFixed(4)); set('--frame2-scale', (1.18 - frame2.enter * .12 + frame2.exit * .06).toFixed(4));
     set('--frame3-opacity', frame3.enter.toFixed(4)); set('--frame3-scale', (1.12 - frame3.enter * .06).toFixed(4));
     set('--intro-copy-y', `${introExit * 90}px`); set('--intro-copy-opacity', (1 - introExit).toFixed(4));
