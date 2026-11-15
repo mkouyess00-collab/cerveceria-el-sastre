@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-1RsNomg0WKh3mm3QPWTno0jwkaMJCfCU0CCfJDg7zgc=' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-y+C7xLrK7VZlIsX6z8B4Gly6513GJmostSyXgKC0lUo=' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>El Sastre · Cervecería en la Plaza de la Constitución, Socuéllamos</title>
@@ -372,7 +372,7 @@ dialog .cap button { min-height: 44px; padding: 0 20px; border-radius: 999px; ba
     const s = smoothScroll;
     const frame2 = seg(s, 560, 900, 1300, 1620), frame3 = seg(s, 1760, 2140, 2540, 2700);
     const progress = clamp(s / 2700), introExit = smoothstep(90, 650, s);
-    const sightsEnter = Math.pow(smoothstep(2760, 3560, s), 1.55), controlsEnter = smoothstep(3360, 3660, s);
+    const sightsEnter = Math.pow(smoothstep(2760, 3560, s), 1.55), controlsEnter = smoothstep(3200, 3500, s);
     const blurActive = clamp(frame2.active * .35 + frame3.enter);
     const splitDrift = Math.pow(frame2.enter, 1.5);
     const sharedY = progress * -74, sharedScale = progress * 0.23;
@@ -391,7 +391,7 @@ dialog .cap button { min-height: 44px; padding: 0 20px; border-radius: 999px; ba
     set('--intro-copy-y', `${introExit * 90}px`); set('--intro-copy-opacity', (1 - introExit).toFixed(4));
     set('--panel2-opacity', (frame2.active * (1 - frame2.exit)).toFixed(4)); set('--panel2-y', `calc(-50% + ${-frame2.exit * 86 + (1 - frame2.enter) * 58}px)`);
     set('--panel3-opacity', (frame3.active * (1 - frame3.exit)).toFixed(4)); set('--panel3-y', `calc(-50% + ${-frame3.exit * 86 + (1 - frame3.enter) * 58}px)`);
-    set('--sights-controls-opacity', controlsEnter.toFixed(4)); controls.classList.toggle('is-ready', controlsEnter > .98);
+    set('--sights-controls-opacity', controlsEnter.toFixed(4)); controls.classList.toggle('is-ready', controlsEnter > .2);
     set('--sights-visibility', sightsEnter > .01 ? 'visible' : 'hidden'); set('--sights-enter-x', `${(1 - sightsEnter) * 420}vw`);
     set('--sights-top', `${Math.min(220, Math.max(96, innerHeight * .19)) - 30}px`);
     $('.sights-slider').inert = sightsEnter < .5;
