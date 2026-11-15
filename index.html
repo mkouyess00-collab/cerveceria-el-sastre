@@ -2,737 +2,443 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-yVvMuUjLhAa8il2t+wS3/FuMgB2Yo8Xrv85CO82rFvM=' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-1RsNomg0WKh3mm3QPWTno0jwkaMJCfCU0CCfJDg7zgc=' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com; connect-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cervecería El Sastre · Plaza de la Constitución, Socuéllamos</title>
-<meta name="description" content="Cervecería El Sastre, en la Plaza de la Constitución de Socuéllamos. Desayunos, menú del día, meriendas, tapas y raciones. Más de 40 años. 926 53 04 50 · 605 90 81 92.">
-<meta name="theme-color" content="#BF6A4F">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Sastre · Cervecería en la Plaza de la Constitución, Socuéllamos</title>
+<meta name="description" content="Cervecería El Sastre (Mesón del Sastre), bajo los arcos de la Plaza de la Constitución de Socuéllamos: tapas, raciones, menú del día, arroces por encargo y terraza. 926 53 04 50.">
+<meta name="theme-color" content="#0b1110">
 <link rel="icon" type="image/png" href="img/icono.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500;9..144,600&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Cervecería El Sastre","alternateName":"Mesón del Sastre","servesCuisine":["Tapas","Raciones","Castellana"],"priceRange":"10-20 €","telephone":"+34 926 53 04 50","address":{"@type":"PostalAddress","streetAddress":"Plaza de la Constitución, 3","postalCode":"13630","addressLocality":"Socuéllamos","addressRegion":"Ciudad Real","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":39.2867619,"longitude":-2.7928791},"hasMap":"https://maps.google.com/?cid=2565810112749576623","sameAs":["https://www.instagram.com/cerveceria_el_sastre/"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"111","bestRating":"5"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"23:59"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"11:00","closes":"23:59"}]}
+</script>
 <style>
-:root{
-  --terra:#AD5A3F; --terra-d:#8F4630; --crema:#F5EEE4; --piedra:#E5DCCD; --piedra-2:#D9CEBC; --carbon:#1E1A18; --carbon-2:#2C2623; --soft:#57483f;
-  --m:clamp(20px,2.8vw,40px);
-  --s-body:clamp(1.0625rem,1rem + .25vw,1.1875rem); --s-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
-  --s-head:clamp(2.6rem,1.4rem + 4.4vw,5.6rem);
-  --ease:cubic-bezier(.16,1,.3,1);
-  --disp:"Fraunces",Georgia,serif;
+/* Diseño: «Mostar Guide» de MotionSites AI, recreado para Cervecería El Sastre */
+:root {
+  --mx: 0; --my: 0;
+  --back-scale: 1.06; --blur-px: 0px; --back-brightness: 1;
+  --shade-top-alpha: 0; --shade-mid-alpha: 0; --shade-bottom-alpha: 0;
+  --blur-tint: 74, 38, 26;
+  --title-y: 0px; --title-scale: 1; --title-opacity: 1;
+  --split-left-x: 0vw; --split-right-x: 0vw; --split-y: 0px; --split-scale: 1;
+  --frame2-opacity: 1; --frame2-scale: 1.06; --frame3-opacity: 0; --frame3-scale: 1.08;
+  --intro-copy-y: 0px; --intro-copy-opacity: 1;
+  --panel2-opacity: 0; --panel2-y: calc(-50% + 58px);
+  --panel3-opacity: 0; --panel3-y: calc(-50% + 58px);
+  --sights-controls-opacity: 0; --sights-enter-x: 420vw; --sights-visibility: hidden; --sights-shift: 0px;
+  --sights-top: clamp(112px, 19vh, 220px);
+  --ink: #111411; --paper: #fdf1e1; --shadow: rgba(0, 0, 0, 0.32); --terra: #B65E43;
+  --serif: "Gloock", Georgia, serif;
+  font-family: Inter, Satoshi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--paper); background: #0b1110; letter-spacing: 0;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%}
-body{font-family:"Instrument Sans",system-ui,sans-serif;font-size:var(--s-body);line-height:1.5;background:var(--carbon);color:var(--carbon);overflow-x:clip}
-img{display:block;max-width:100%}
-a{color:inherit}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
-::selection{background:var(--terra);color:var(--crema)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.wrap{padding-inline:var(--m)}
-h1,h2,h3,.disp{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;letter-spacing:-.025em}
-h2{font-size:var(--s-head);line-height:.92}
-body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;background:url(img/grano.png);opacity:.5;mix-blend-mode:overlay;animation:grain 1s steps(6) infinite}
-@keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-6%,-2%)}80%{transform:translate(5%,4%)}}
-.progress{position:fixed;top:0;left:0;height:4px;width:100%;background:var(--terra);transform-origin:0 50%;transform:scaleX(0);z-index:80}
-section{position:relative}
+* { box-sizing: border-box; }
+html { min-height: 100%; background: #0b1110; }
+body { min-height: 100%; margin: 0; overflow-x: clip; background: #0b1110; }
+button { border: 0; font: inherit; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--paper); outline-offset: 3px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-.nav{position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;justify-content:space-between;padding:12px var(--m);color:var(--crema);transition:background .5s var(--ease)}
-.nav.solid{background:var(--carbon)}
-.nav .brand{display:block;width:54px;height:54px}
-.nav .brand img{width:100%;height:100%}
-.nav ul{display:flex;gap:28px;list-style:none;align-items:center;font-weight:600;font-size:15px}
-.nav ul a:not(.btn){text-decoration:none;position:relative;padding:6px 0}
-.nav ul a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
-.nav ul a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;border-radius:999px;background:var(--terra);color:var(--crema);font-weight:600;text-decoration:none;transition:background .3s,transform .3s var(--ease)}
-.btn:hover{background:var(--terra-d)}
-.btn:active{transform:scale(.96)}
-.btn.line{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
-.btn.line:hover{background:var(--crema);color:var(--carbon);box-shadow:inset 0 0 0 2px var(--crema)}
-.btn.dark{background:var(--carbon)}
-.btn.dark:hover{background:var(--carbon-2)}
-.nav .btn{min-height:44px;padding:0 20px}
+/* ---------- escena de cine ---------- */
+.cinema-scroll { position: relative; height: calc(100vh + 3700px); }
+.stage { position: sticky; top: 0; height: 100vh; min-height: 620px; overflow: hidden; isolation: isolate; background: #2a1c16; }
+.world, .scene-img, .shade, .site-header, .sights-slider, .sights-controls, .hero-title, .intro-copy, .story-panel { position: absolute; }
+.world { inset: 0; overflow: hidden; }
+.scene-img { inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; -webkit-user-drag: none; pointer-events: none; will-change: transform, opacity, filter; }
+.frame3-img { z-index: 0; opacity: var(--frame3-opacity); transform: scale(calc(var(--frame3-scale) * var(--back-scale))) translate3d(calc(var(--mx) * -12px), calc(var(--my) * -6px), 0); filter: blur(var(--blur-px)) brightness(var(--back-brightness)); object-position: 50% 50%; }
+.frame2-img { z-index: 1; opacity: var(--frame2-opacity); transform: scale(var(--frame2-scale)) translate3d(calc(var(--mx) * -10px), calc(var(--my) * -6px), 0); filter: blur(calc(var(--blur-px) * var(--f2blur, 0))) brightness(var(--back-brightness)); object-position: 50% 45%; }
+.split { position: absolute; inset: 0; z-index: 6; overflow: hidden; pointer-events: none; will-change: transform; }
+.split img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+.split-left { clip-path: inset(0 50% 0 0); transform: translate3d(calc(var(--split-left-x) + var(--mx) * 22px), calc(var(--split-y) + var(--my) * 10px), 0) scale(var(--split-scale)); transform-origin: 21% 52%; }
+.split-right { clip-path: inset(0 0 0 50%); transform: translate3d(calc(var(--split-right-x) + var(--mx) * 22px), calc(var(--split-y) + var(--my) * 10px), 0) scale(var(--split-scale)); transform-origin: 79% 52%; }
+.shade { inset: 0; z-index: 7; pointer-events: none;
+  background: linear-gradient(180deg, rgba(var(--blur-tint), var(--shade-top-alpha)) 0%, rgba(var(--blur-tint), var(--shade-mid-alpha)) 48%, rgba(var(--blur-tint), var(--shade-bottom-alpha)) 100%), linear-gradient(180deg, rgba(10,8,6,.55) 0%, rgba(10,8,6,0) 34%, rgba(10,8,6,0) 55%, rgba(10,8,6,.62) 100%); }
 
-/* portada: la terraza bajo los arcos */
-.hero{height:100svh;overflow:hidden;background:var(--carbon)}
-.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:48% 40%;transform-origin:47% 33%}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,14,.88) 0%,rgba(20,16,14,.55) 36%,rgba(20,16,14,.05) 66%)}
-.hero-copy{position:absolute;left:var(--m);right:var(--m);bottom:40px;display:grid;grid-template-columns:1fr auto;gap:24px 48px;align-items:end;color:var(--crema)}
-.hero h1{font-size:clamp(5rem,15vw,15.5rem);line-height:.8;letter-spacing:-.04em}
-.hero h1 .ln{display:block;overflow:hidden;padding:.02em 0 .1em}
-.hero h1 .ln>span{display:block}
-.hero h1 small{display:block;font-family:"Instrument Sans",sans-serif;font-size:var(--s-lead);letter-spacing:0;font-weight:600;margin-top:10px}
-.hero-side{max-width:33ch;display:flex;flex-direction:column;gap:18px;padding-bottom:14px}
-.hero-side p{font-size:var(--s-lead);line-height:1.3}
-.hero-side .acts{display:flex;gap:12px;flex-wrap:wrap}
-.status{font-weight:600;font-size:15px;display:flex;align-items:center;gap:10px}
-.status i{width:10px;height:10px;border-radius:50%;background:#86D694;flex:none;animation:pulse 2s ease-in-out infinite}
-.status.closed i{background:var(--terra);animation:none}
-@keyframes pulse{50%{opacity:.35}}
-.sheet{position:absolute;inset:0;background:var(--terra);opacity:0;display:grid;place-items:center;pointer-events:none;color:var(--crema);padding:var(--m)}
-.sheet span{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(3.4rem,10vw,10rem);line-height:.9;letter-spacing:-.035em;text-align:center}
+/* cabecera */
+.site-header { top: 0; left: 0; right: 0; z-index: 12; display: grid; grid-template-columns: minmax(260px,1fr) auto minmax(260px,1fr); align-items: center; gap: 32px; padding: 28px 32px; color: rgba(253,241,225,.86); }
+.site-logo { justify-self: start; display: inline-flex; align-items: center; gap: 12px; font-family: var(--serif); font-size: 24px; line-height: 1; color: rgba(253,241,225,.95); text-decoration: none; white-space: nowrap; }
+.site-logo img { width: 42px; height: 42px; border-radius: 50%; }
+.site-nav { display: flex; justify-content: center; gap: clamp(24px, 2.2vw, 44px); }
+.site-nav a { color: rgba(253,241,225,.86); font-size: 20px; font-weight: 400; line-height: 1; text-decoration: none; text-shadow: 0 2px 16px rgba(0,0,0,.25); transition: color .3s; }
+.site-nav a:hover { color: #fff; }
+.call { justify-self: end; display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 22px; border-radius: 999px; background: var(--paper); color: var(--ink); font-weight: 700; font-size: 16px; text-decoration: none; transition: transform .3s; }
+.call:hover { transform: translateY(-2px); }
 
-/* la casa */
-.casa{background:var(--piedra);padding:140px 0 130px}
-.casa .top{display:grid;grid-template-columns:7fr 5fr;gap:24px 64px;align-items:end}
-.casa .top p{font-size:var(--s-lead);line-height:1.35}
-.casa .top p q{font-family:var(--disp);font-style:italic;font-variation-settings:"SOFT" 100}
-.live{margin-top:56px;background:var(--carbon);color:var(--crema);padding:26px 30px;display:flex;flex-wrap:wrap;gap:10px 40px;align-items:baseline;justify-content:space-between}
-.live strong{font-size:var(--s-lead);font-weight:600}
-.facts{margin-top:90px;display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.facts b{display:block;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(2.2rem,4vw,3.8rem);line-height:.95;letter-spacing:-.03em}
-.facts small{display:block;margin-top:10px;font-size:15px;color:var(--soft);max-width:24ch}
-.casa .rot{margin-top:100px;display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:center}
-.casa .rot figure{overflow:hidden;aspect-ratio:820/1125}
-.casa .rot img{width:100%;height:100%;object-fit:cover}
-.casa .rot blockquote p{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-size:clamp(1.6rem,1.1rem + 1.6vw,2.25rem);line-height:1.15;letter-spacing:-.02em}
-.casa .rot blockquote footer{margin-top:16px;font-size:15px;font-weight:600}
+/* título */
+.hero-title { z-index: 8; left: 50%; top: clamp(122px, 19vh, 205px); width: min(94vw, 1780px); margin: 0; color: var(--paper); font-family: var(--serif); font-size: 14rem; font-weight: 400; line-height: .78; text-align: center; text-shadow: 0 20px 60px rgba(0,0,0,.35); transform: translate3d(-50%, var(--title-y), 0) scale(var(--title-scale)); opacity: var(--title-opacity); will-change: transform, opacity; }
+.intro-copy { z-index: 9; left: 50%; bottom: clamp(56px, 16vh, 260px); width: min(600px, calc(100vw - 40px)); text-align: center; transform: translate3d(-50%, var(--intro-copy-y), 0); opacity: var(--intro-copy-opacity); }
+.intro-copy p { margin: 0 auto; max-width: 600px; color: var(--paper); font-size: 1.18rem; font-weight: 500; line-height: 1.25; text-shadow: 0 2px 18px rgba(0,0,0,.55); }
+.hero-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
+.hero-tags span, .hero-tags a { min-height: 42px; display: inline-flex; align-items: center; gap: 8px; padding: 0 25px; color: var(--ink); border-radius: 999px; background: var(--paper); font-size: .98rem; font-weight: 500; box-shadow: 0 12px 30px rgba(0,0,0,.18); text-decoration: none; }
+.dot { width: 9px; height: 9px; border-radius: 50%; background: #24753D; animation: pulse 2s ease-in-out infinite; }
+.closed .dot { background: #B3392F; animation: none; }
+@keyframes pulse { 50% { opacity: .35; } }
 
-/* del café a la cena */
-.dia{background:var(--crema);padding:140px 0 120px}
-.dia .head{display:grid;grid-template-columns:7fr 5fr;gap:24px 64px;align-items:end}
-.moments{margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;list-style:none}
-.mo{background:var(--piedra);display:flex;flex-direction:column;transition:background .4s,color .4s,transform .5s var(--ease)}
-.mo figure{aspect-ratio:3/4;overflow:hidden}
-.mo img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
-.mo:hover img{transform:scale(1.06)}
-.mo div{padding:20px 20px 24px}
-.mo b{display:block;font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}
-.mo h3{font-size:clamp(1.7rem,1.2rem + 1.2vw,2.4rem);line-height:1;margin:0 0 6px}
-.mo b{margin-bottom:10px}
-.mo p{font-size:16px;line-height:1.45}
-.mo.now{background:var(--terra-d);color:var(--crema)}
-.mo .tag{display:none;margin-top:12px;font-weight:600;font-size:15px}
-.mo.now .tag{display:block}
+/* paneles */
+.story-panel { z-index: 10; left: 50%; top: 45%; width: min(760px, calc(100vw - 42px)); text-align: center; pointer-events: none; will-change: transform, opacity; }
+.story-panel h2 { margin: 0; color: var(--paper); font-family: var(--serif); font-size: 4.75rem; font-weight: 400; line-height: .95; text-shadow: 0 16px 38px var(--shadow); }
+.story-panel p { width: min(540px, 100%); margin: 26px auto 0; color: var(--paper); font-size: 1.14rem; font-weight: 500; line-height: 1.25; text-shadow: 0 2px 18px rgba(0,0,0,.5); }
+.story-panel-2 { top: 58%; opacity: var(--panel2-opacity); transform: translate3d(-50%, var(--panel2-y), 0); }
+.story-panel-3 { top: 36%; opacity: var(--panel3-opacity); transform: translate3d(-50%, var(--panel3-y), 0); }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 86px; width: min(470px, 100%); margin: 64px auto 0; }
+.facts dt { color: var(--paper); font-family: var(--serif); font-size: 4.2rem; line-height: .9; text-shadow: 0 14px 34px var(--shadow); }
+.facts dd { margin: 18px 0 0; color: var(--paper); font-size: 1rem; font-weight: 500; line-height: 1.14; text-shadow: 0 2px 18px rgba(0,0,0,.5); }
+.note-button { min-height: 50px; margin-top: 28px; display: inline-flex; align-items: center; gap: 12px; padding: 0 28px; border-radius: 999px; color: var(--ink); background: var(--paper); box-shadow: 0 16px 34px rgba(0,0,0,.18); pointer-events: auto; cursor: pointer; text-decoration: none; font-weight: 500; }
+.note-button span:first-child { font-size: 1.25rem; line-height: 1; }
 
-/* un día en la plaza: escena fija */
-.clock,.dia-bar{display:none}
-.dia.cine{padding:0;height:100svh;overflow:hidden;background:var(--carbon);color:var(--crema)}
-.dia.cine .wrap{padding:0;height:100%;position:relative}
-.dia.cine .head{position:absolute;z-index:6;top:92px;left:var(--m);right:var(--m);grid-template-columns:1fr auto}
-.dia.cine .head p{max-width:34ch;text-align:right}
-.dia.cine .moments{margin:0;position:absolute;inset:0;display:block}
-.dia.cine .mo{position:absolute;inset:0;background:none;color:var(--crema)}
-.dia.cine .mo figure{position:absolute;inset:0;aspect-ratio:auto}
-.dia.cine .mo figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,16,14,.85),rgba(20,16,14,.15) 55%,rgba(20,16,14,.55))}
-.dia.cine .mo:hover img{transform:none}
-.dia.cine .mo div{position:absolute;z-index:2;left:var(--m);bottom:64px;max-width:min(40ch,60vw);padding:0}
-.dia.cine .mo h3{font-size:clamp(3.6rem,9vw,9.5rem);line-height:.86;letter-spacing:-.04em;margin:0 0 14px}
-.dia.cine .mo b{font-size:var(--s-lead);margin-bottom:8px}
-.dia.cine .mo p{font-size:var(--s-lead);line-height:1.35}
-.dia.cine .mo .tag{display:none!important}
-.dia.cine .mo.now h3::after{content:" · ahora";color:var(--terra);font-size:.32em;letter-spacing:0;vertical-align:middle}
-.dia.cine .clock{display:block;position:absolute;z-index:6;right:var(--m);bottom:52px;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(5rem,15vw,15rem);line-height:.8;letter-spacing:-.05em;font-variant-numeric:tabular-nums;color:var(--crema)}
-.dia.cine .dia-bar{display:block;position:absolute;z-index:6;left:var(--m);right:var(--m);bottom:24px;height:4px;background:rgba(245,238,228,.25)}
-.dia.cine .dia-bar i{display:block;height:100%;background:var(--terra);transform-origin:0 50%;transform:scaleX(0)}
+/* tarjetas de la carta (las «sights» del diseño) */
+.sights-slider { z-index: 11; left: 0; right: 0; top: var(--sights-top); visibility: var(--sights-visibility); transform: translate3d(var(--sights-enter-x), 0, 0); pointer-events: auto; will-change: transform; }
+.sights-head { padding: 0 48px; margin: 0 0 22px; font-family: var(--serif); font-size: clamp(2.4rem, 1.6rem + 2.6vw, 4.2rem); font-weight: 400; line-height: 1; color: var(--paper); text-shadow: 0 14px 34px var(--shadow); }
+.sights-track { display: flex; gap: clamp(16px, 1.15vw, 24px); align-items: stretch; transform: translate3d(calc(var(--sights-shift) + 48px), 0, 0); transition: transform 640ms cubic-bezier(.22, 1, .36, 1); will-change: transform; }
+.sights-track.is-jumping { transition: none; }
+.sight-card { position: relative; flex: 0 0 clamp(360px, 19.4vw, 430px); height: 236px; padding: 24px; overflow: hidden; border-radius: 24px; color: #000; background: var(--paper); box-shadow: 0 18px 52px rgba(20,8,2,.22); cursor: pointer; user-select: none; text-align: left; transition: transform .45s cubic-bezier(.22,1,.36,1), background .3s; }
+.sight-card:hover { transform: translateY(-6px); }
+.sight-card.is-active { background: #fff8ee; }
+.sight-kicker { display: block; margin-bottom: 56px; color: #000; font-size: 12px; font-weight: 500; line-height: 1.05; text-transform: uppercase; letter-spacing: .02em; }
+.sight-pin { position: absolute; top: 20px; right: 20px; width: 76px; height: 76px; border-radius: 50%; object-fit: cover; pointer-events: none; box-shadow: 0 8px 20px rgba(0,0,0,.18); }
+.sight-card h3 { position: absolute; left: 24px; right: 24px; bottom: calc(24px + (16px * 1.16 * 2) + 12px); max-width: calc(100% - 20px); margin: 0; color: #000; font-family: var(--serif); font-size: 26px; font-weight: 400; line-height: 1; }
+.sight-card p { position: absolute; left: 24px; right: 24px; bottom: 24px; margin: 12px 0 0; color: #000; font-size: 16px; line-height: 1.16; display: -webkit-box; max-height: calc(2em * 1.16); overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.sight-card .ver { position: absolute; right: 24px; top: 108px; font-size: 13px; font-weight: 700; color: var(--terra); }
+.sights-controls { z-index: 11; left: 48px; top: calc(var(--sights-top) + 236px + 92px); display: flex; gap: 14px; align-items: center; opacity: var(--sights-controls-opacity); pointer-events: none; }
+.sights-controls.is-ready { pointer-events: auto; }
+.sight-nav { width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; color: var(--ink); background: rgba(253,241,225,.94); box-shadow: 0 18px 36px rgba(0,0,0,.2); cursor: pointer; font-size: 20px; transition: transform .3s; }
+.sight-nav:active { transform: scale(.92); }
+.sights-controls small { margin-left: 10px; font-size: 15px; color: rgba(253,241,225,.86); max-width: 46ch; }
 
-/* cerveza de bodega */
-.bodega{background:var(--carbon);color:var(--crema);padding:140px 0}
-.bodega .grid{display:grid;grid-template-columns:6fr 6fr;gap:clamp(24px,5vw,80px);align-items:center}
-.bodega .big{margin-top:28px;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-size:clamp(1.8rem,1.2rem + 2vw,3rem);line-height:1.08;letter-spacing:-.02em}
-.bodega .who{display:block;margin-top:12px;font-size:15px;font-weight:600;color:#cdbfae}
-.bodega .txt>p:last-child{margin-top:28px;max-width:40ch}
-.glass{position:relative;aspect-ratio:3/4;max-height:86svh;margin-left:auto;width:100%;max-width:620px;background:var(--carbon-2)}
-.glass img{width:100%;height:100%;object-fit:cover}
-.glass figcaption{position:absolute;left:16px;bottom:14px;margin:0;font-weight:600;font-size:15px}
+/* ---------- debajo de la escena ---------- */
+.after { background: #0b1110; color: var(--paper); }
+.block { padding: 140px 48px; max-width: 1560px; margin: 0 auto; }
+.block h2 { margin: 0; font-family: var(--serif); font-weight: 400; font-size: 4.75rem; line-height: .95; }
+.visit { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 5vw, 96px); align-items: stretch; }
+.estado { display: inline-flex; align-items: center; gap: 12px; margin-top: 30px; padding: 14px 24px; border-radius: 999px; background: #24753D; color: #fff; font-weight: 800; letter-spacing: .02em; }
+.estado.closed { background: #B3392F; }
+.estado i { width: 12px; height: 12px; border-radius: 50%; background: #fff; animation: pulse 2s ease-in-out infinite; }
+.estado.closed i { animation: none; }
+.estado-txt { margin: 14px 0 0; font-size: 1.14rem; }
+.calc { margin: 8px 0 0; font-size: 15px; color: rgba(253,241,225,.7); }
+.hours { list-style: none; padding: 0; margin: 34px 0 0; display: flex; flex-direction: column; gap: 6px; }
+.hours li { display: flex; justify-content: space-between; gap: 16px; padding: 15px 22px; border-radius: 16px; background: #151c1a; font-variant-numeric: tabular-nums; }
+.hours li.today { background: var(--paper); color: var(--ink); font-weight: 700; }
+.contact address { font-style: normal; margin-top: 28px; font-size: 1.3rem; line-height: 1.35; }
+.contact .tel { display: block; margin-top: 16px; font-family: var(--serif); font-size: clamp(2.4rem, 1.6rem + 2.6vw, 4rem); line-height: 1; text-decoration: none; }
+.contact .tel + .tel { margin-top: 4px; }
+.acts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.pill { min-height: 50px; display: inline-flex; align-items: center; gap: 10px; padding: 0 26px; border-radius: 999px; background: var(--paper); color: var(--ink); font-weight: 700; text-decoration: none; transition: transform .3s; }
+.pill.ghost { background: transparent; color: var(--paper); box-shadow: inset 0 0 0 1.5px rgba(253,241,225,.7); }
+.pill:hover { transform: translateY(-2px); }
+.map { position: relative; min-height: 600px; border-radius: 24px; overflow: hidden; background: #151c1a; }
+.map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; filter: sepia(.3) saturate(.8) brightness(.95); }
+.reviews { display: grid; grid-template-columns: 4fr 8fr; gap: clamp(32px, 5vw, 96px); align-items: start; }
+.score { font-family: var(--serif); font-size: clamp(7rem, 15vw, 14rem); line-height: .8; }
+.score-note { margin: 18px 0 26px; font-size: 1.05rem; }
+.quotes { display: flex; flex-direction: column; gap: 52px; }
+.quotes p { margin: 0; font-family: var(--serif); font-size: clamp(1.8rem, 1.2rem + 2vw, 3.2rem); line-height: 1.08; }
+.quotes footer { margin-top: 14px; font-size: 15px; font-weight: 700; color: rgba(253,241,225,.75); }
+.foot { padding: 72px 48px 28px; max-width: 1560px; margin: 0 auto; }
+.foot .big { font-family: var(--serif); font-size: clamp(4rem, 14vw, 15rem); line-height: .8; margin: 0; color: var(--paper); }
+.foot .legal { margin-top: 30px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: rgba(253,241,225,.65); }
+.js .reveal { opacity: 0; transform: translateY(36px); transition: opacity 1s cubic-bezier(.16,1,.3,1), transform 1s cubic-bezier(.16,1,.3,1); }
+.js .reveal.in { opacity: 1; transform: none; }
 
-/* arroces: cartel */
-.arroces{background:var(--terra);color:var(--crema);overflow:hidden}
-.arroces .rice{display:block;margin-top:40px}
-.arroces .rice li{display:block;background:none;padding:0;border-radius:0;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(2.8rem,1.4rem + 5.4vw,7.4rem);line-height:1.02;letter-spacing:-.04em;white-space:nowrap}
-.arroces .rice li:nth-child(even){text-align:right;color:var(--carbon)}
-.arroces .btn{background:var(--carbon)}
-.arroces .btn:hover{background:var(--carbon-2)}
-.arroces .btn.line:hover{background:var(--crema);color:var(--carbon);box-shadow:inset 0 0 0 2px var(--crema)}
+dialog { border: 0; padding: 0; background: transparent; max-width: min(92vw, 980px); max-height: 92vh; margin: auto; color: var(--paper); }
+dialog::backdrop { background: rgba(11,17,16,.9); }
+dialog img { max-height: 78vh; width: auto; max-width: 100%; margin: 0 auto; border-radius: 18px; }
+dialog .cap { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 14px; font-family: var(--serif); font-size: 30px; }
+dialog .cap button { min-height: 44px; padding: 0 20px; border-radius: 999px; background: var(--paper); color: var(--ink); font-family: Inter, sans-serif; font-weight: 700; font-size: 16px; cursor: pointer; }
 
-/* palabras que suben, foto flotante, cursor */
-.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
-.w>span,.ch{display:inline-block}
-.float{position:fixed;left:0;top:0;width:280px;aspect-ratio:4/3;object-fit:cover;pointer-events:none;z-index:85;opacity:0}
-.cur{position:fixed;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--terra);pointer-events:none;z-index:95;transition:width .3s var(--ease),height .3s var(--ease),margin .3s var(--ease),opacity .3s}
-.cur.big{width:56px;height:56px;margin:-28px 0 0 -28px;opacity:.45}
-
-/* pantalla de carga y escenas 3D */
-.loader{position:fixed;inset:0;z-index:100;background:var(--carbon);display:grid;place-items:center;color:var(--crema);animation:ldOut .9s var(--ease) 4.5s forwards}
-.ld-in{display:flex;flex-direction:column;align-items:center;gap:18px}
-.ld-in img{width:min(34vw,170px);height:auto}
-.ld-in b{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(3rem,8vw,6rem);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
-@keyframes ldOut{to{transform:translateY(-100%);visibility:hidden}}
-/* bandas */
-.band{background:var(--terra);color:var(--crema);overflow:hidden;padding:20px 0;white-space:nowrap}
-.band .track{display:inline-flex;animation:marq 34s linear infinite;will-change:transform}
-.band span{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(2.6rem,1.6rem + 5vw,6.5rem);line-height:1;letter-spacing:-.03em;padding-right:.35em}
-.band span b{font-weight:500;color:var(--carbon)}
-.band.dark{background:var(--carbon)}
-.band.dark span b{color:var(--terra)}
-.band.rev .track{animation-direction:reverse}
-@keyframes marq{to{transform:translateX(-50%)}}
-
-/* la carta, como su papel */
-.carta{background:var(--carbon);padding:130px 0 140px;color:var(--crema)}
-.carta-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
-.carta-head p{max-width:40ch}
-.tabs{margin-top:48px;display:flex;gap:8px;flex-wrap:wrap}
-.tab{min-height:46px;padding:0 20px;border-radius:999px;background:var(--carbon-2);color:var(--crema);font-weight:600;transition:background .3s,color .3s}
-.tab:hover{background:#3a332f}
-.tab[aria-selected=true]{background:var(--crema);color:var(--carbon)}
-.paper{margin-top:20px;background:#F1EFEA;color:#161616;padding:clamp(28px,5vw,72px);position:relative}
-.paper::before{content:"";position:absolute;inset:14px;border:2px solid #161616;pointer-events:none;clip-path:polygon(0 18px,18px 0,calc(100% - 18px) 0,100% 18px,100% calc(100% - 18px),calc(100% - 18px) 100%,18px 100%,0 calc(100% - 18px))}
-.paper-title{text-align:center;font-family:"Instrument Sans",sans-serif}
-.paper-title small{display:block;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:.2em}
-.paper-title strong{display:block;font-weight:600;font-size:clamp(3.6rem,9vw,8rem);line-height:.9;text-transform:uppercase;letter-spacing:.04em;transform:scaleY(1.15)}
-.paper-title em{display:block;font-style:normal;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:.16em;margin-top:14px}
-.panel[hidden]{display:none}
-.dishes{list-style:none;margin-top:44px;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,5vw,80px)}
-.dishes li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-bottom:2px solid #161616;min-height:70px}
-.dishes .n{font-weight:600;font-size:clamp(1.05rem,.95rem + .4vw,1.3rem);text-transform:uppercase;letter-spacing:.06em;line-height:1.2}
-.dishes .n small{display:block;text-transform:none;letter-spacing:0;font-weight:400;font-size:15px;color:#4a4540;margin-top:4px;line-height:1.35}
-.ver{flex:none;min-height:42px;padding:0 16px;border-radius:999px;background:var(--terra);color:var(--crema);font-weight:600;font-size:15px;transition:background .3s,transform .3s var(--ease)}
-.ver:hover{background:var(--terra-d)}
-.ver:active{transform:scale(.95)}
-.paper-foot{margin-top:40px;text-align:center;font-weight:600;font-size:17px;text-transform:uppercase;letter-spacing:.16em}
-.carta .note{margin-top:28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
-
-/* escaparate: platos en marcos sacados de su carta de papel, sobre una repisa iluminada */
-.escaparate{background:var(--carbon);color:var(--crema);padding:140px 0 150px;overflow:hidden}
-.esc-head{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end}
-.shelf{list-style:none;margin-top:72px;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.4vw,40px);position:relative;padding-bottom:34px}
-.shelf::before{content:"";position:absolute;left:-4%;right:-4%;top:-60px;bottom:0;background:radial-gradient(60% 70% at 50% 0%,rgba(255,214,170,.16),rgba(255,214,170,0) 70%);pointer-events:none}
-.shelf::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:var(--piedra);box-shadow:0 26px 60px rgba(0,0,0,.55)}
-.piece{display:flex;flex-direction:column-reverse;gap:14px;width:100%;text-align:left;transition:transform .6s var(--ease),opacity .5s}
-.frame{position:relative;display:block;aspect-ratio:3/4;background:#F1EFEA;padding:12px;clip-path:polygon(0 16px,16px 0,calc(100% - 16px) 0,100% 16px,100% calc(100% - 16px),calc(100% - 16px) 100%,16px 100%,0 calc(100% - 16px))}
-.frame::after{content:"";position:absolute;inset:6px;border:2px solid #161616;clip-path:inherit;pointer-events:none}
-.frame img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
-.lbl{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-size:clamp(1.3rem,1rem + .8vw,1.8rem);line-height:1.05;letter-spacing:-.02em}
-@media (hover:hover){.shelf:has(.piece:hover) .piece{opacity:.45}.shelf .piece:hover{opacity:1;transform:translateY(-18px)}.piece:hover img{transform:scale(1.06)}}
-.ficha{max-width:min(94vw,1200px);width:100%;background:var(--carbon);color:var(--crema);padding:0;display:none}
-.ficha[open]{display:grid;grid-template-columns:7fr 5fr}
-.fi-pic{background:#120f0e;display:grid;place-items:center;min-height:60svh}
-.fi-pic img{max-height:84svh;width:100%;height:100%;object-fit:contain}
-.fi-txt{padding:clamp(24px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:16px}
-.fi-txt h3{font-size:clamp(2.4rem,4vw,4rem);line-height:.95}
-.fi-txt p{font-size:var(--s-lead);line-height:1.35}
-.fi-txt span{font-size:15px;color:#cdbfae;font-weight:600}
-.fi-txt .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
-
-/* opiniones */
-.voces{background:var(--terra);color:var(--crema);padding:140px 0}
-.voces .grid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(24px,5vw,80px);align-items:start}
-.score b{display:block;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(7rem,16vw,15rem);line-height:.8;letter-spacing:-.05em}
-.score span{display:block;margin-top:18px}
-.quotes{display:flex;flex-direction:column;gap:56px}
-.quotes p{font-size:clamp(1.4rem,1.05rem + 1.2vw,2rem);line-height:1.22;font-weight:600}
-.quotes blockquote:first-child p{font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(2.4rem,1.5rem + 3.2vw,4.6rem);line-height:.98;letter-spacing:-.03em}
-.quotes footer{margin-top:14px;font-size:15px;font-weight:600}
-
-/* arroces */
-.arroces{background:var(--terra);padding:130px 0}
-.arroces .grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,64px);align-items:center}
-.arroces ul{list-style:none;margin-top:36px;display:flex;flex-wrap:wrap;gap:10px}
-.arroces li{background:var(--crema);padding:12px 20px;border-radius:999px;font-weight:600}
-.arroces p{margin-top:24px;max-width:44ch}
-.arroces .acts{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
-.arroces figure{overflow:hidden;aspect-ratio:4/5}
-.arroces figure img{width:100%;height:100%;object-fit:cover}
-
-/* terraza */
-.terraza{min-height:110svh;overflow:hidden;color:var(--crema);display:flex;align-items:flex-end}
-.terraza img{position:absolute;inset:-10% 0;width:100%;height:120%;object-fit:cover}
-.terraza::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(20,16,14,.85),rgba(20,16,14,0) 55%)}
-.terraza .wrap{position:relative;z-index:2;padding-bottom:64px;display:grid;grid-template-columns:7fr 5fr;gap:24px 64px;align-items:end;width:100%}
-.terraza p{font-size:var(--s-lead);line-height:1.35}
-
-/* visita */
-.visita{background:var(--crema);padding:140px 0 120px}
-.visita .grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:stretch}
-.hours{list-style:none;margin-top:36px;display:flex;flex-direction:column;gap:6px}
-.hours li{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;background:var(--piedra);font-variant-numeric:tabular-nums}
-.hours li.today{background:var(--terra);color:var(--crema);font-weight:600}
-.visita address{font-style:normal;margin-top:24px;font-size:var(--s-lead);line-height:1.3}
-.visita .acts{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
-.visita .btn.line:hover{background:var(--carbon);color:var(--crema);box-shadow:inset 0 0 0 2px var(--carbon)}
-.map{min-height:560px;position:relative;background:var(--piedra)}
-.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.25) saturate(.8)}
-
-/* pie */
-.pie{background:var(--carbon);color:var(--crema);min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:48px var(--m) 24px;gap:40px}
-.pie .cols{display:grid;grid-template-columns:3fr 2fr 2fr 2fr;gap:24px;font-size:16px}
-.pie .cols ul{list-style:none;display:flex;flex-direction:column;gap:6px}
-.pie .cols li:first-child{font-weight:600}
-.pie .cols li:not(:first-child){opacity:.8}
-.pie .cols a{text-decoration:none}.pie .cols a:hover{text-decoration:underline}
-.pie .logo{width:140px;height:140px}
-.pie .bye{align-self:end;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-weight:500;font-size:clamp(3.4rem,11vw,12rem);line-height:.86;letter-spacing:-.045em;overflow:hidden}
-.pie .bye span{display:block}
-.pie .bye span:last-child{color:var(--terra)}
-.pie .legal{display:flex;justify-content:space-between;font-size:13px;opacity:.72;gap:16px;flex-wrap:wrap}
-
-dialog{border:0;padding:0;background:transparent;max-width:min(92vw,980px);max-height:92svh;margin:auto;color:var(--crema)}
-dialog::backdrop{background:rgba(20,16,14,.9)}
-dialog img{max-height:78svh;width:auto;max-width:100%;margin:0 auto}
-dialog .cap{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:14px;font-family:var(--disp);font-variation-settings:"SOFT" 100;font-size:30px}
-dialog .close{min-height:44px;padding:0 20px;border-radius:999px;background:var(--crema);color:var(--carbon);font-family:"Instrument Sans",sans-serif;font-weight:600;font-size:16px}
-dialog[open]{animation:dlg .5s var(--ease)}
-@keyframes dlg{from{opacity:0;transform:translateY(24px) scale(.97)}}
-
-@media (max-width:900px){
-  .nav ul li.hide{display:none}
-  .nav ul{gap:16px}
-  .nav .brand{width:46px;height:46px}
-  .hero-copy{grid-template-columns:1fr;bottom:24px;gap:18px}
-  .hero h1{font-size:25vw}
-  .hero h1 small{font-size:17px}
-  .hero-side p{font-size:17px}
-  .casa,.dia,.carta,.visita,.voces,.arroces{padding:96px 0}
-  .casa .top,.dia .head{grid-template-columns:1fr}
-  .facts{display:grid;grid-template-columns:1fr 1fr;row-gap:32px;margin-top:56px}
-  .facts b{font-size:30px}
-  .live{padding:20px}
-  .casa .rot{grid-template-columns:1fr;margin-top:64px}
-  .moments{grid-template-columns:1fr 1fr;gap:10px}
-  .mo div{padding:14px}
-  .mo h3{font-size:24px}
-  .mo p{font-size:15px}
-  .carta-head{grid-template-columns:1fr}
-  .dishes{grid-template-columns:1fr}
-  .paper::before{inset:8px}
-  .paper-title small,.paper-title em,.paper-foot{font-size:15px}
-  .escaparate{padding:96px 0 110px}
-  .esc-head{grid-template-columns:1fr}
-  .shelf{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:48px;margin-inline:calc(var(--m) * -1);padding:0 var(--m) 34px}
-  .shelf li{flex:0 0 68vw;scroll-snap-align:start}
-  .ficha[open]{grid-template-columns:1fr}
-  .fi-pic{min-height:auto}
-  .fi-pic img{max-height:52svh}
-  .voces .grid,.arroces .grid{grid-template-columns:1fr;gap:48px}
-  .terraza{min-height:90svh}
-  .terraza .wrap{grid-template-columns:1fr;padding-bottom:40px}
-  .visita .grid{grid-template-columns:1fr}
-  .map{min-height:380px}
-  .pie .cols{grid-template-columns:1fr 1fr;row-gap:32px;font-size:15px}
-  .pie .cols ul:first-child{grid-column:1/-1}
-  .bodega{padding:96px 0}
-  .bodega .grid{grid-template-columns:1fr}
-  .dia.cine .head{top:78px;grid-template-columns:1fr}
-  .dia.cine .head p{display:none}
-  .dia.cine .mo div{bottom:150px;max-width:none;right:var(--m)}
-  .dia.cine .mo h3{font-size:15vw}
-  .dia.cine .mo p,.dia.cine .mo b{font-size:17px}
-  .dia.cine .clock{font-size:26vw;bottom:40px}
-  .arroces .rice li{font-size:10.4vw}
-  .pie .bye{font-size:15vw}
-  .sheet span{font-size:11vw}
-  .casa .rot blockquote p{font-size:22px}
-  .quotes p,.quotes blockquote:first-child p{font-size:22px;line-height:1.3}
-  .quotes blockquote:first-child p{font-family:var(--disp);font-size:24px}
-  .band span{font-size:40px}
+@media (max-width: 1500px) { .hero-title { font-size: 11rem; } .story-panel h2 { font-size: 4.1rem; } }
+@media (max-width: 1100px) {
+  .hero-title { top: 15vh; font-size: 7.5rem; }
+  .story-panel h2 { font-size: 3.2rem; }
+  .facts { gap: 34px; margin-top: 44px; }
+  .facts dt { font-size: 3.2rem; }
+  .sight-card { flex-basis: clamp(320px, 40vw, 390px); }
+  .site-nav { display: none; }
+  .site-header { grid-template-columns: 1fr auto; }
+  .visit, .reviews { grid-template-columns: 1fr; }
 }
-@media (prefers-reduced-motion:reduce){.loader{display:none}*,*::before,*::after{animation:none!important;transition:none!important}}
+@media (max-width: 640px) {
+  .stage { min-height: 640px; }
+  .site-header { gap: 18px; padding: 20px; }
+  .site-logo { font-size: 20px; }
+  .site-logo img { width: 36px; height: 36px; }
+  .call { min-height: 42px; padding: 0 18px; font-size: 15px; }
+  .hero-title { top: 17vh; font-size: 4.6rem; }
+  .intro-copy { bottom: 42px; }
+  .intro-copy p, .story-panel p { font-size: 1rem; }
+  .hero-tags { gap: 8px; }
+  .hero-tags span, .hero-tags a { min-height: 38px; padding: 0 16px; font-size: .88rem; }
+  .story-panel { top: 42%; }
+  .story-panel-3 { top: 30%; }
+  .story-panel h2 { font-size: 2.45rem; }
+  .facts { gap: 18px; margin-top: 34px; }
+  .facts dt { font-size: 2.5rem; }
+  .sights-head { padding: 0 20px; }
+  .sights-track { gap: 12px; transform: translate3d(calc(var(--sights-shift) + 20px), 0, 0); }
+  .sight-card { flex-basis: min(82vw, 330px); }
+  .sights-controls { left: 20px; top: calc(var(--sights-top) + 236px + 80px); flex-wrap: wrap; }
+  .sights-controls small { margin: 8px 0 0; flex-basis: 100%; }
+  .block { padding: 96px 20px; }
+  .block h2 { font-size: 2.8rem; }
+  .map { min-height: 380px; }
+  .foot { padding: 56px 20px 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sights-track, .sight-card, .reveal { transition: none; }
+  .reveal { opacity: 1; transform: none; }
+  .dot, .estado i { animation: none; }
+}
 </style>
 </head>
 <body>
-<div class="loader" aria-hidden="true"><div class="ld-in"><img src="img/logo.png" alt="" width="200" height="200"><b data-pct>0</b></div></div>
-<div class="progress" aria-hidden="true"></div>
-<header class="nav" id="nav">
-  <a class="brand" href="#inicio" aria-label="Cervecería El Sastre, inicio"><img src="img/logo.png" alt="" width="200" height="200"></a>
-  <nav aria-label="Principal"><ul>
-    <li><a href="#carta">Carta</a></li>
-    <li class="hide"><a href="#dia">Del café a la cena</a></li>
-    <li class="hide"><a href="#visita">Horario</a></li>
-    <li><a class="btn" href="tel:+34926530450">Llamar</a></li>
-  </ul></nav>
-</header>
-
-<main>
-<section class="hero" id="inicio">
-  <img class="hero-photo" src="img/terraza.jpg" alt="Terraza de la Cervecería El Sastre bajo los arcos de piedra, con el rótulo «el Sastre» sobre el arco terracota" width="1600" height="1200" fetchpriority="high">
-  <div class="hero-shade"></div>
-  <div class="hero-copy">
-    <h1><span class="ln"><span>el Sastre</span></span><small>Cervecería en la Plaza de la Constitución, Socuéllamos</small></h1>
-    <div class="hero-side">
-      <p class="status" data-status><i></i><span>Plaza de la Constitución, 3</span></p>
-      <p>Desayunos, menú del día, meriendas, tapas y raciones con la Mahou bien tirada.</p>
-      <div class="acts"><a class="btn" href="#carta">Ver la carta</a><a class="btn line" href="tel:+34926530450">926 53 04 50</a></div>
-    </div>
-  </div>
-  <div class="sheet" aria-hidden="true"><span>Buena cerveza,<br>mejor compañía</span></div>
-</section>
-
-<section class="casa" id="casa">
-  <div class="wrap">
-    <div class="top" data-r>
-      <h2>Más de 40 años en Socuéllamos</h2>
-      <p>La familia de El Sastre lleva más de cuatro décadas dando de comer en el pueblo. Hoy, en la cervecería de la plaza: <q>la calidad, el servicio y la profesionalidad</q> de siempre.</p>
-    </div>
-    <div class="live" data-r aria-live="polite"><strong data-live>Consultando el horario…</strong><span data-next>Martes a viernes desde las 7:00</span></div>
-    <div class="facts" data-r>
-      <div><b><span data-count="4.5">4,5</span> en Google</b><small>Con 111 opiniones de clientes</small></div>
-      <div><b>Desde las 7:00</b><small>De martes a viernes; fines de semana y festivos desde las 11:00</small></div>
-      <div><b>10–20 €</b><small>Por persona, según sus clientes</small></div>
-      <div><b>En la plaza</b><small>Plaza de la Constitución, 3</small></div>
-    </div>
-    <div class="rot">
-      <figure data-r><img src="img/rotulo.jpg" alt="El rótulo «el Sastre · Cervecería» sobre el arco terracota de la entrada, entre los sillares de piedra" width="820" height="1125" loading="lazy" data-par></figure>
-      <blockquote data-r><p>«Para mí ha sido el auténtico concepto de gastrobar: comida de gran calidad con un rápido servicio. Muy atentos y profesionales.»</p><footer>Carlos López Puente · Local Guide en Google</footer></blockquote>
-    </div>
-  </div>
-</section>
-
-<section class="bodega" id="bodega">
-  <div class="wrap grid">
-    <div class="txt" data-r>
-      <h2>Cerveza de bodega</h2>
-      <p class="big">«Tienen cerveza Mahou de bodega, muy rica.»</p>
-      <span class="who">Un cliente, en Google</span>
-      <p>Recién tirada en la barra y con su aperitivo, como dice el cartel de la entrada.</p>
-    </div>
-    <figure class="glass"><img src="img/cana.jpg" alt="Caña de Mahou con aperitivo de rollitos y aceitunas" width="1200" height="1600" loading="lazy"><figcaption>Una caña con su aperitivo</figcaption></figure>
-  </div>
-</section>
-
-<section class="dia" id="dia">
-  <div class="wrap">
-    <div class="head" data-r>
-      <h2>Un día en la plaza</h2>
-      <p>Abrimos con el primer café de la mañana y cerramos con la última caña. Te marcamos qué toca a esta hora.</p>
-    </div>
-    <ol class="moments">
-      <li class="mo" data-from="7" data-to="12" data-t="7"><figure><img src="img/plaza.jpg" alt="La terraza de la cervecería en la plaza, con las sombrillas abiertas" width="1600" height="1200" loading="lazy"></figure><div><h3>Desayunos</h3><b>Desde las 7:00</b><p>Café, tostadas y almuerzos de martes a viernes, con la plaza despertando.</p><span class="tag">Es la hora</span></div></li>
-      <li class="mo" data-from="12" data-to="17" data-t="14"><figure><img src="img/ensalada.jpg" alt="Ensalada con huevo y aguacate" width="1200" height="1600" loading="lazy"></figure><div><h3>Menú del día</h3><b>A mediodía</b><p>Muy variado y a diario, con platos de la casa.</p><span class="tag">Es la hora</span></div></li>
-      <li class="mo" data-from="17" data-to="20" data-t="17.5"><figure><img src="img/asadillo.jpg" alt="Tapa con pan y vino blanco en la terraza al sol" width="1600" height="1200" loading="lazy"></figure><div><h3>Meriendas</h3><b>17:00 a 20:00</b><p>Tartas, dulces caseros, tostadas y café. O una copa al sol.</p><span class="tag">Es la hora</span></div></li>
-      <li class="mo" data-from="20" data-to="24" data-t="21.5"><figure><img src="img/lomo-orza.jpg" alt="Lomo de orza en lonchas con salsa" width="1600" height="1200" loading="lazy"></figure><div><h3>Tapas y raciones</h3><b>Hasta el cierre</b><p>De la carta, para compartir con una caña o un vino de la zona.</p><span class="tag">Es la hora</span></div></li>
-    </ol>
-    <div class="clock" aria-hidden="true" data-clock>7:00</div>
-    <div class="dia-bar" aria-hidden="true"><i></i></div>
-  </div>
-</section>
-
-<div class="band" aria-hidden="true"><div class="track">
-  <span>Buena cerveza <b>·</b> mejor compañía <b>·</b> </span><span>Buena cerveza <b>·</b> mejor compañía <b>·</b> </span><span>Buena cerveza <b>·</b> mejor compañía <b>·</b> </span><span>Buena cerveza <b>·</b> mejor compañía <b>·</b> </span>
-</div></div>
-
-<section class="carta" id="carta">
-  <div class="wrap">
-    <div class="carta-head" data-r>
-      <h2>La carta</h2>
-      <p>Las tapas y raciones de su carta de papel, y lo que más piden sus clientes. Pulsa «Ver foto» para ver el plato.</p>
-    </div>
-    <div class="tabs" role="tablist" aria-label="Secciones de la carta" data-r>
-      <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">De la casa</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Ensaladas y frías</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Fritos y de la tierra</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p4" id="t4" tabindex="-1">Del mar</button>
-      <button class="tab" role="tab" aria-selected="false" aria-controls="p5" id="t5" tabindex="-1">Ajillos</button>
-    </div>
-    <div class="paper" data-r>
-      <div class="paper-title"><small>Cervecería</small><strong>El Sastre</strong><em>Tapas &amp; raciones</em></div>
-      <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1"><ul class="dishes">
-        <li><span class="n">Bacalao rebozado a la cerveza<small>Muy fresco, con ensalada y limón</small></span><button class="ver" data-foto="img/bacalao.jpg" data-t="Bacalao rebozado a la cerveza">Ver foto</button></li>
-        <li><span class="n">Pan bao<small>De lo más pedido por sus clientes</small></span></li>
-        <li><span class="n">Donuts de carne<small>La sorpresa de la casa</small></span></li>
-        <li><span class="n">Queso frito</span></li>
-        <li><span class="n">Calamaritos</span></li>
-        <li><span class="n">Menú del día<small>A diario y muy variado</small></span></li>
-      </ul></div>
-      <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden><ul class="dishes">
-        <li><span class="n">Ensalada burrata</span></li>
-        <li><span class="n">Ensalada de salmón<small>Con guacamole y aguacate</small></span><button class="ver" data-foto="img/ensalada.jpg" data-t="Ensalada">Ver foto</button></li>
-        <li><span class="n">Ensalada mixta completa</span></li>
-        <li><span class="n">Ensaladilla rusa</span></li>
-        <li><span class="n">Jamón y queso</span><button class="ver" data-foto="img/jamon-queso.jpg" data-t="Jamón y queso">Ver foto</button></li>
-        <li><span class="n">Lomo de orza</span><button class="ver" data-foto="img/lomo-orza.jpg" data-t="Lomo de orza">Ver foto</button></li>
-      </ul></div>
-      <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden><ul class="dishes">
-        <li><span class="n">Croquetas de cecina</span><button class="ver" data-foto="img/croquetas.jpg" data-t="Croquetas caseras">Ver foto</button></li>
-        <li><span class="n">Croquetas de puchero</span><button class="ver" data-foto="img/croquetas.jpg" data-t="Croquetas caseras">Ver foto</button></li>
-        <li><span class="n">Queso frito</span></li>
-        <li><span class="n">Pisto manchego con huevo</span></li>
-      </ul></div>
-      <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden><ul class="dishes">
-        <li><span class="n">Calamar a la plancha</span></li>
-        <li><span class="n">Calamar rebozado</span></li>
-        <li><span class="n">Chipirón a la plancha</span></li>
-        <li><span class="n">Chipirón rebozado</span></li>
-        <li><span class="n">Sepia</span></li>
-        <li><span class="n">Bacalada<small>Con tomate a la miel</small></span></li>
-        <li><span class="n">Tartar de salmón<small>Con aguacate</small></span></li>
-      </ul></div>
-      <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden><ul class="dishes">
-        <li><span class="n">Ajillo de gambas y gulas</span><button class="ver" data-foto="img/ajillo.jpg" data-t="Ajillo de gambas y gulas">Ver foto</button></li>
-        <li><span class="n">Ajillo de gambón y gulas</span><button class="ver" data-foto="img/gambas-gulas.jpg" data-t="Ajillo de gambón y gulas">Ver foto</button></li>
-        <li><span class="n">Ajillo de sesos</span></li>
-      </ul></div>
-      <p class="paper-foot">Buena cerveza, mejor compañía</p>
-    </div>
-    <div class="note" data-r><p>Precios y platos del menú de hoy: pregunta en barra o llama.</p><a class="btn" href="tel:+34926530450">Llamar al 926 53 04 50</a></div>
-  </div>
-</section>
-
-<section class="escaparate" id="platos">
-  <div class="wrap">
-    <div class="esc-head" data-r>
-      <h2>Lo que más se pide</h2>
-      <p>Elige un plato del escaparate para verlo entero.</p>
-    </div>
-    <ul class="shelf">
-        <li><button class="piece" data-ficha data-img="img/bacalao.jpg" data-t="Bacalao a la cerveza" data-q="«Bacalao muy fresco con un rebozado a la cerveza espectacular.»" data-who="Un cliente, en Google"><span class="frame"><img src="img/bacalao.jpg" alt="Bacalao rebozado a la cerveza" loading="lazy"></span><span class="lbl">Bacalao a la cerveza</span></button></li>
-        <li><button class="piece" data-ficha data-img="img/ajillo.jpg" data-t="Ajillo de gambas y gulas" data-q="«Un plato exquisito de gambas y gulas con huevo.»" data-who="KosmoTIC SCM, en Google"><span class="frame"><img src="img/ajillo.jpg" alt="Ajillo de gambas y gulas con huevo" loading="lazy"></span><span class="lbl">Ajillo de gambas y gulas</span></button></li>
-        <li><button class="piece" data-ficha data-img="img/jamon-queso.jpg" data-t="Jamón y queso" data-q="Producto de proximidad. «No olvides pedir los vinos de la zona.»" data-who="Jav New, en Google"><span class="frame"><img src="img/jamon-queso.jpg" alt="Plato de jamón y queso manchego" loading="lazy"></span><span class="lbl">Jamón y queso</span></button></li>
-        <li><button class="piece" data-ficha data-img="img/croquetas.jpg" data-t="Croquetas caseras" data-q="De cecina o de puchero. «Riquísimas y muy cremosas.»" data-who="KosmoTIC SCM, en Google"><span class="frame"><img src="img/croquetas.jpg" alt="Croquetas caseras en cesta" loading="lazy"></span><span class="lbl">Croquetas caseras</span></button></li>
-    </ul>
-  </div>
-</section>
-
-<section class="voces" id="opiniones">
-  <div class="wrap grid">
-    <div class="score" data-r><h2 class="sr">Opiniones</h2><b><span data-count="4.5">4,5</span></b><span>de 5 en Google, con 111 opiniones.</span></div>
-    <div class="quotes" data-r>
-      <blockquote><p>«Para mí es una parada obligatoria en Socuéllamos.»</p><footer>Jav New · Local Guide</footer></blockquote>
-      <blockquote><p>«Su bacalao, el queso frito, el pan bao o el donuts de carne, están buenísimos. A diario hay menú del día muy variado.»</p><footer>Jav New · Local Guide</footer></blockquote>
-      <blockquote><p>«Comida de lujo y servicio genial, nos han aconsejado súper bien.»</p><footer>Pilar Wonders · Local Guide</footer></blockquote>
-    </div>
-  </div>
-</section>
-
-<section class="arroces" id="arroces">
-  <div class="wrap">
-    <div data-r>
-      <h2>Arroces por encargo</h2>
-      <ul class="rice">
-        <li>Arroz a banda</li><li>Arroz negro</li><li>Arroz con bogavante</li><li>Paella mixta</li><li>Paella de marisco</li><li>Fideuá</li><li>Arroz con zamburiñas</li>
-      </ul>
-      <p>Para un plan con amigos o una comida familiar: encarga el tuyo y disfruta sin cocinar.</p>
-      <div class="acts"><a class="btn" href="tel:+34605908192">Encargar: 605 90 81 92</a><a class="btn line" href="tel:+34926530450">926 53 04 50</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="terraza" id="terraza">
-  <img src="img/vino-terraza.jpg" alt="Botella de vino blanco de la zona y copas en una mesa de la terraza al sol" width="1200" height="1600" loading="lazy" data-move>
-  <div class="wrap">
-    <h2 style="color:var(--crema)" data-r>La terraza, en la plaza</h2>
-    <p data-r>Mesas al sol frente al Ayuntamiento, para el café de la mañana o la caña de la tarde.</p>
-  </div>
-</section>
-
-<section class="visita" id="visita">
-  <div class="wrap grid">
-    <div data-r>
-      <h2>Horario</h2>
-      <ul class="hours" data-hours>
-        <li data-d="1"><span>Lunes</span><span>Cerrado</span></li>
-        <li data-d="2"><span>Martes</span><span>7:00 – cierre</span></li>
-        <li data-d="3"><span>Miércoles</span><span>7:00 – cierre</span></li>
-        <li data-d="4"><span>Jueves</span><span>7:00 – cierre</span></li>
-        <li data-d="5"><span>Viernes</span><span>7:00 – cierre</span></li>
-        <li data-d="6"><span>Sábado</span><span>11:00 – cierre</span></li>
-        <li data-d="0"><span>Domingo y festivos</span><span>11:00 – cierre</span></li>
-      </ul>
-      <address>Plaza de la Constitución, 3<br>13630 Socuéllamos, Ciudad Real</address>
-      <div class="acts">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=39.2867619%2C-2.7928791" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
-        <a class="btn line" href="tel:+34926530450">926 53 04 50</a>
-        <a class="btn line" href="tel:+34605908192">605 90 81 92</a>
+<main class="site-shell">
+  <section class="cinema-scroll" id="cinema" aria-label="Cervecería El Sastre, historia en scroll">
+    <div class="stage">
+      <div class="world">
+        <img class="scene-img frame3-img" src="img/bacalao.jpg" alt="" width="1600" height="1200">
+        <img class="scene-img frame2-img" src="img/cana.jpg" alt="" width="1200" height="1600">
+        <div class="split split-left" aria-hidden="true"><img src="img/terraza.jpg" alt="" width="1600" height="1200"></div>
+        <div class="split split-right"><img src="img/terraza.jpg" alt="Terraza de la Cervecería El Sastre bajo los arcos de piedra de la Plaza de la Constitución, con el rótulo «el Sastre»" width="1600" height="1200" fetchpriority="high"></div>
+        <div class="shade"></div>
+        <header class="site-header" aria-label="Navegación principal">
+          <a class="site-logo" href="#cinema"><img src="img/logo.png" alt="" width="200" height="200">El Sastre</a>
+          <nav class="site-nav" aria-label="Menú principal">
+            <a href="#cinema">Inicio</a><a href="#carta" data-to-carta>Carta</a><a href="#visita">Horario</a><a href="#opiniones">Opiniones</a>
+          </nav>
+          <a class="call" href="tel:+34926530450">Llamar</a>
+        </header>
+        <h1 class="hero-title">El Sastre<span class="sr">, cervecería en Socuéllamos</span></h1>
+        <section class="story-panel story-panel-2" aria-label="La barra">
+          <h2>La caña, de bodega.</h2>
+          <p>Mahou de bodega bien tirada y vinos de la zona, en la barra o en la terraza de la plaza.</p>
+          <dl class="facts">
+            <div><dt>40+</dt><dd>años de la familia El Sastre en el pueblo</dd></div>
+            <div><dt>4,5</dt><dd>en Google, con 111 reseñas</dd></div>
+          </dl>
+        </section>
+        <section class="story-panel story-panel-3" aria-label="La cocina">
+          <h2>La cocina sale a la plaza.</h2>
+          <p>Tapas y raciones para compartir, menú del día a diario y arroces por encargo.</p>
+          <a class="note-button" href="#carta" data-to-carta><span aria-hidden="true">↗</span><span>Ver la carta</span></a>
+        </section>
+        <section class="sights-slider" id="carta" aria-label="Carta de la Cervecería El Sastre">
+          <h2 class="sights-head">La carta</h2>
+          <div class="sights-track" data-track></div>
+        </section>
+        <div class="sights-controls" aria-label="Controles de la carta">
+          <button class="sight-nav sight-prev" aria-label="Plato anterior">←</button>
+          <button class="sight-nav sight-next" aria-label="Plato siguiente">→</button>
+          <small>Pulsa un plato con foto para verla. Precios: pregunta en barra o llama.</small>
+        </div>
       </div>
+      <section class="intro-copy" aria-label="Presentación">
+        <p>Cervecería y gastrobar bajo los arcos de la Plaza de la Constitución, en Socuéllamos. Desayunos, menú del día, meriendas, tapas y raciones.</p>
+        <div class="hero-tags" aria-label="Lo destacado">
+          <span data-live><i class="dot" aria-hidden="true"></i><b>Consultando…</b></span>
+          <span>Mahou de bodega</span>
+          <a href="#carta" data-to-carta>Ver la carta</a>
+        </div>
+      </section>
     </div>
-    <div class="map" data-r>
-      <iframe sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Mapa de la Cervecería El Sastre en Socuéllamos" referrerpolicy="strict-origin-when-cross-origin" src="https://maps.google.com/maps?q=Cervecer%C3%ADa%20El%20Sastre%2C%20Plaza%20de%20la%20Constituci%C3%B3n%203%2C%20Socu%C3%A9llamos&amp;z=17&amp;output=embed"></iframe>
-    </div>
+  </section>
+
+  <div class="after">
+    <section class="block visit" id="visita">
+      <div class="contact reveal">
+        <h2>Horario</h2>
+        <p class="estado" data-estado role="status"><i aria-hidden="true"></i><span>Consultando…</span></p>
+        <p class="estado-txt" data-estado-txt></p>
+        <p class="calc">Calculado con la hora de Socuéllamos según su horario habitual (Instagram). Festivos: llama para confirmar.</p>
+        <ul class="hours" data-hours>
+          <li data-d="1"><span>Lunes</span><span>Cerrado</span></li>
+          <li data-d="2"><span>Martes</span><span>7:00 – cierre</span></li>
+          <li data-d="3"><span>Miércoles</span><span>7:00 – cierre</span></li>
+          <li data-d="4"><span>Jueves</span><span>7:00 – cierre</span></li>
+          <li data-d="5"><span>Viernes</span><span>7:00 – cierre</span></li>
+          <li data-d="6"><span>Sábado</span><span>11:00 – cierre</span></li>
+          <li data-d="0"><span>Domingo y festivos</span><span>11:00 – cierre</span></li>
+        </ul>
+        <address>Plaza de la Constitución, 3<br>13630 Socuéllamos, Ciudad Real</address>
+        <a class="tel" href="tel:+34926530450">926 53 04 50</a>
+        <a class="tel" href="tel:+34605908192">605 90 81 92</a>
+        <div class="acts">
+          <a class="pill" href="https://www.google.com/maps/dir/?api=1&amp;destination=39.2867619%2C-2.7928791" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+          <a class="pill ghost" href="https://www.instagram.com/cerveceria_el_sastre/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" title="Mapa de la Cervecería El Sastre en Socuéllamos" referrerpolicy="strict-origin-when-cross-origin" src="https://maps.google.com/maps?q=Cervecer%C3%ADa%20El%20Sastre%2C%20Plaza%20de%20la%20Constituci%C3%B3n%203%2C%20Socu%C3%A9llamos&amp;z=17&amp;output=embed"></iframe>
+      </div>
+    </section>
+
+    <section class="block reviews" id="opiniones">
+      <div class="reveal">
+        <h2 class="sr">Opiniones</h2>
+        <div class="score">4,5</div>
+        <p class="score-note">de 5 en Google, con 111 reseñas.</p>
+        <a class="pill" href="https://maps.google.com/?cid=2565810112749576623" target="_blank" rel="noopener noreferrer">Ver las reseñas en Google</a>
+      </div>
+      <div class="quotes">
+        <blockquote class="reveal"><p>«Para mí es una parada obligatoria en mi visita a Socuéllamos.»</p><footer>Jav New · Local Guide</footer></blockquote>
+        <blockquote class="reveal"><p>«El auténtico concepto de gastrobar: comida de gran calidad con un rápido servicio.»</p><footer>Carlos López Puente · Local Guide</footer></blockquote>
+        <blockquote class="reveal"><p>«Comida de lujo y servicio genial, nos han aconsejado súper bien.»</p><footer>Pilar Wonders · Local Guide</footer></blockquote>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p class="big">El Sastre</p>
+      <div class="legal"><span>© 2026 Cervecería El Sastre · Plaza de la Constitución, 3 · Socuéllamos</span><span>Diseño basado en «Mostar Guide» de MotionSites AI · Web de Bramia</span></div>
+    </footer>
   </div>
-</section>
 </main>
-
-<footer class="pie">
-  <div class="cols">
-    <ul><li><img class="logo" src="img/logo.png" alt="Logotipo de Cervecería El Sastre" width="200" height="200" loading="lazy"></li></ul>
-    <ul><li>Dónde</li><li>Plaza de la Constitución, 3</li><li>13630 Socuéllamos</li><li>Ciudad Real</li></ul>
-    <ul><li>Cuándo</li><li>Martes a viernes desde las 7:00</li><li>Sábado, domingo y festivos desde las 11:00</li><li>Lunes cerrado</li></ul>
-    <ul><li>Contacto</li><li><a href="tel:+34926530450">926 53 04 50</a></li><li><a href="tel:+34605908192">605 90 81 92</a></li><li><a href="https://www.instagram.com/cerveceria_el_sastre/" target="_blank" rel="noopener noreferrer">Instagram</a></li></ul>
-  </div>
-  <p class="bye" data-bye><span>¡Gracias por</span><span>elegirnos!</span></p>
-  <div class="legal"><span>© 2026 Cervecería El Sastre · Socuéllamos</span><span>Web de Bramia</span></div>
-</footer>
-
-<dialog id="ficha" class="ficha" aria-label="Ficha del plato">
-  <div class="fi-pic"><img src="img/bacalao.jpg" alt="Bacalao rebozado a la cerveza" data-fimg></div>
-  <div class="fi-txt"><h3 data-ft>Bacalao a la cerveza</h3><p data-fq>«Bacalao muy fresco con un rebozado a la cerveza espectacular.»</p><span data-fw>Un cliente, en Google</span>
-    <div class="acts"><a class="btn" href="#carta" data-fclose>Ver la carta</a><button class="btn line" data-fclose>Cerrar</button></div></div>
-</dialog>
 
 <dialog id="foto" aria-label="Foto del plato">
   <img src="img/bacalao.jpg" alt="Bacalao rebozado a la cerveza" width="1600" height="1200" data-dimg>
-  <div class="cap"><span data-dcap>Bacalao rebozado a la cerveza</span><button class="close" data-close>Cerrar</button></div>
+  <div class="cap"><span data-dcap>Bacalao rebozado a la cerveza</span><button data-close>Cerrar</button></div>
 </dialog>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed" crossorigin="anonymous"></script>
 <script>
 (() => {
   if (window.top !== window.self) { try { window.top.location = window.self.location; } catch (e) { document.documentElement.style.display = 'none'; } }
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  document.documentElement.classList.add('js');
 
-  /* ---- abierto ahora (hora de Madrid). Cierre aproximado a medianoche, según Google ---- */
+  /* ===== CARTA (editable): kicker, nombre, descripción, foto (o null). Solo platos verificados ===== */
+  const CARTA = [
+    ['De la casa', 'Bacalao rebozado a la cerveza', 'Muy fresco, con un rebozado a la cerveza que destacan los clientes.', 'img/bacalao.jpg'],
+    ['De la casa', 'Pan bao', 'De lo más pedido por los clientes, según las reseñas.', null],
+    ['De la casa', 'Donuts de carne', 'La sorpresa de la casa, según las reseñas.', null],
+    ['Ajillos', 'Ajillo de gambas y gulas', 'Con huevo. «Un plato exquisito», según un cliente.', 'img/ajillo.jpg'],
+    ['Ajillos', 'Ajillo de gambón y gulas', 'Otro clásico de la carta de la casa.', 'img/gambas-gulas.jpg'],
+    ['Raciones', 'Croquetas caseras', 'De cecina o de puchero. Muy cremosas.', 'img/croquetas.jpg'],
+    ['Raciones', 'Lomo de orza', 'Un clásico manchego para compartir.', 'img/lomo-orza.jpg'],
+    ['Raciones', 'Jamón y queso', 'Producto de proximidad, con vino de la zona.', 'img/jamon-queso.jpg'],
+    ['Raciones', 'Queso frito', 'De los que más recomiendan los clientes.', null],
+    ['Del mar', 'Calamar y chipirón', 'A la plancha o rebozados.', null],
+    ['Del mar', 'Sepia y bacalada', 'La bacalada, con tomate a la miel.', null],
+    ['Del mar', 'Tartar de salmón', 'Con aguacate.', null],
+    ['Ensaladas', 'Ensaladas de la casa', 'Burrata, salmón con guacamole, mixta completa y ensaladilla rusa.', 'img/ensalada.jpg'],
+    ['De la tierra', 'Pisto manchego', 'Con huevo.', null],
+    ['Por encargo', 'Arroces', 'A banda, negro, con bogavante, paellas, fideuá y con zamburiñas.', null],
+    ['A diario', 'Menú del día', 'Muy variado, de martes a viernes.', null],
+    ['17:00 a 20:00', 'Meriendas', 'Tartas, dulces caseros, tostadas y café.', null],
+    ['Para beber', 'Mahou de bodega', 'Bien tirada, en la barra o en la terraza.', 'img/cana.jpg'],
+    ['Para beber', 'Vinos de la zona', 'Pide que te aconsejen: productos de proximidad.', 'img/vino-terraza.jpg'],
+  ];
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const track = $('[data-track]');
+  track.innerHTML = CARTA.map(([k, n, d, f]) => `<article class="sight-card" tabindex="0" role="button" aria-label="${esc(n)}" ${f ? `data-foto="${esc(f)}"` : ''}><span class="sight-kicker">${esc(k)}</span><img class="sight-pin" src="${f ? esc(f) : 'img/logo.png'}" alt="" loading="lazy">${f ? '<span class="ver">Ver foto</span>' : ''}<h3>${esc(n)}</h3><p>${esc(d)}</p></article>`).join('');
+
+  /* ===== abierto / cerrado (Europe/Madrid). Cierre aproximado: medianoche ===== */
   const OPEN = { 0: 11, 2: 7, 3: 7, 4: 7, 5: 7, 6: 11 }, CLOSE = 24;
-  const DAYS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
-  const madrid = () => new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Madrid' }));
-  function status() {
-    const n = madrid(), d = n.getDay(), h = n.getHours() + n.getMinutes() / 60;
+  const DIAS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+  function estado() {
+    const n = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/Madrid' })), d = n.getDay(), h = n.getHours() + n.getMinutes() / 60;
     const open = OPEN[d] !== undefined && h >= OPEN[d] && h < CLOSE;
-    let line, short;
-    if (open) { line = 'Ahora mismo: abierto. Pásate por la plaza.'; short = 'Abierto ahora'; }
-    else {
-      let i = 0, dd = d;
-      if (OPEN[d] === undefined || h >= OPEN[d]) { do { i++; dd = (d + i) % 7; } while (OPEN[dd] === undefined); }
-      const when = i === 0 ? 'hoy' : i === 1 ? 'mañana' : 'el ' + DAYS[dd];
-      line = 'Ahora mismo: cerrado. Abrimos ' + when + ' a las ' + OPEN[dd] + ':00.';
-      short = 'Cerrado · abrimos ' + when + ' a las ' + OPEN[dd] + ':00';
-    }
-    $$('[data-status]').forEach(el => { el.classList.toggle('closed', !open); el.lastElementChild.textContent = short; });
-    $('[data-live]').textContent = line;
-    $('[data-next]').textContent = d === 1 ? 'Los lunes descansamos.' : (d === 0 || d === 6) ? 'Fines de semana y festivos, desde las 11:00.' : 'De martes a viernes, desde las 7:00.';
+    let txt;
+    if (open) txt = 'Hoy abierto desde las ' + OPEN[d] + ':00 hasta el cierre.';
+    else { let i = 0, dd = d; if (OPEN[d] === undefined || h >= OPEN[d]) { do { i++; dd = (d + i) % 7; } while (OPEN[dd] === undefined); }
+      txt = 'Abrimos ' + (i === 0 ? 'hoy' : i === 1 ? 'mañana' : 'el ' + DIAS[dd]) + ' a las ' + OPEN[dd] + ':00.'; }
+    const e = $('[data-estado]'); e.classList.toggle('closed', !open); e.lastElementChild.textContent = open ? 'ABIERTO AHORA' : 'CERRADO AHORA';
+    $('[data-estado-txt]').textContent = txt;
+    const l = $('[data-live]'); l.classList.toggle('closed', !open); l.querySelector('b').textContent = open ? 'Abierto ahora' : 'Cerrado ahora';
     $$('[data-hours] li').forEach(li => li.classList.toggle('today', +li.dataset.d === d));
-    $$('.mo').forEach(m => m.classList.toggle('now', open && h >= +m.dataset.from && h < +m.dataset.to));
   }
-  status(); setInterval(status, 30000);
+  estado(); setInterval(estado, 30000);
 
-  /* ---- pestañas de la carta ---- */
-  const tabs = $$('[role=tab]');
-  function show(t) {
-    tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; $('#' + x.getAttribute('aria-controls')).hidden = !on; });
-    if (window.gsap && !reduce) gsap.from($$('#' + t.getAttribute('aria-controls') + ' li'), { y: 24, opacity: 0, duration: .6, ease: 'expo.out', stagger: .05 });
+  /* ===== motor de la escena (matemática del diseño Mostar Guide) ===== */
+  const section = $('.cinema-scroll'), root = document.documentElement;
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const controls = $('.sights-controls');
+  let targetMouseX = 0, targetMouseY = 0, mouseX = 0, mouseY = 0, targetScroll = 0, smoothScroll = 0, initialized = false, rafPending = false;
+  const clamp = (v, min = 0, max = 1) => Math.min(max, Math.max(min, v));
+  const smoothstep = (e0, e1, v) => { const x = clamp((v - e0) / (e1 - e0)); return x * x * (3 - 2 * x); };
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const seg = (s, a, b, c, d) => { const enter = smoothstep(a, b, s), exit = smoothstep(c, d, s); return { enter, exit, active: enter * (1 - exit) }; };
+  const dist = () => clamp(-section.getBoundingClientRect().top, 0, section.offsetHeight - innerHeight);
+  const set = (k, v) => root.style.setProperty(k, v);
+
+  function update() {
+    rafPending = false;
+    targetScroll = dist();
+    if (!initialized || reduceMotion.matches) { smoothScroll = targetScroll; initialized = true; } else smoothScroll = lerp(smoothScroll, targetScroll, 0.14);
+    if (Math.abs(smoothScroll - targetScroll) < 0.08) smoothScroll = targetScroll;
+    mouseX = lerp(mouseX, targetMouseX, 0.12); mouseY = lerp(mouseY, targetMouseY, 0.12);
+    const s = smoothScroll;
+    const frame2 = seg(s, 560, 900, 1300, 1620), frame3 = seg(s, 1760, 2140, 2540, 2700);
+    const progress = clamp(s / 2700), introExit = smoothstep(90, 650, s);
+    const sightsEnter = Math.pow(smoothstep(2760, 3560, s), 1.55), controlsEnter = smoothstep(3360, 3660, s);
+    const blurActive = clamp(frame2.active * .35 + frame3.enter);
+    const splitDrift = Math.pow(frame2.enter, 1.5);
+    const sharedY = progress * -74, sharedScale = progress * 0.23;
+    set('--mx', reduceMotion.matches ? 0 : mouseX.toFixed(4)); set('--my', reduceMotion.matches ? 0 : mouseY.toFixed(4));
+    set('--back-scale', (1.06 + progress * .12).toFixed(4));
+    set('--blur-px', `${(sightsEnter * 14 + frame3.exit * 0).toFixed(2)}px`);
+    set('--back-brightness', (1 - sightsEnter * 0.3 - blurActive * 0.08).toFixed(4));
+    set('--shade-top-alpha', (frame2.active * .25 + sightsEnter * .35).toFixed(4));
+    set('--shade-mid-alpha', (frame2.active * .2 + sightsEnter * .3).toFixed(4));
+    set('--shade-bottom-alpha', (frame2.active * .35 + sightsEnter * .45).toFixed(4));
+    set('--title-y', `${introExit * -210}px`); set('--title-scale', (1 - introExit * .08).toFixed(4)); set('--title-opacity', (1 - introExit).toFixed(4));
+    set('--split-left-x', `${-splitDrift * 78}vw`); set('--split-right-x', `${splitDrift * 78}vw`);
+    set('--split-y', `${sharedY - splitDrift * 120}px`); set('--split-scale', (1 + sharedScale + frame2.enter * .5).toFixed(4));
+    set('--frame2-opacity', (1 - frame3.enter).toFixed(4)); set('--frame2-scale', (1.18 - frame2.enter * .12 + frame2.exit * .06).toFixed(4));
+    set('--frame3-opacity', frame3.enter.toFixed(4)); set('--frame3-scale', (1.12 - frame3.enter * .06).toFixed(4));
+    set('--intro-copy-y', `${introExit * 90}px`); set('--intro-copy-opacity', (1 - introExit).toFixed(4));
+    set('--panel2-opacity', (frame2.active * (1 - frame2.exit)).toFixed(4)); set('--panel2-y', `calc(-50% + ${-frame2.exit * 86 + (1 - frame2.enter) * 58}px)`);
+    set('--panel3-opacity', (frame3.active * (1 - frame3.exit)).toFixed(4)); set('--panel3-y', `calc(-50% + ${-frame3.exit * 86 + (1 - frame3.enter) * 58}px)`);
+    set('--sights-controls-opacity', controlsEnter.toFixed(4)); controls.classList.toggle('is-ready', controlsEnter > .98);
+    set('--sights-visibility', sightsEnter > .01 ? 'visible' : 'hidden'); set('--sights-enter-x', `${(1 - sightsEnter) * 420}vw`);
+    set('--sights-top', `${Math.min(220, Math.max(96, innerHeight * .19)) - 30}px`);
+    $('.sights-slider').inert = sightsEnter < .5;
+    if (Math.abs(smoothScroll - targetScroll) > .08 || Math.abs(mouseX - targetMouseX) > .001 || Math.abs(mouseY - targetMouseY) > .001) requestTick();
   }
-  tabs.forEach((t, i) => {
-    t.addEventListener('click', () => show(t));
-    t.addEventListener('keydown', e => { const k = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (k) { const n = tabs[(i + k + tabs.length) % tabs.length]; n.focus(); show(n); } });
+  function requestTick() { if (!rafPending) { rafPending = true; requestAnimationFrame(update); } }
+  addEventListener('scroll', requestTick, { passive: true });
+  addEventListener('resize', () => { updateSlider(); requestTick(); });
+  addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; targetMouseX = e.clientX / innerWidth - .5; targetMouseY = e.clientY / innerHeight - .5; requestTick(); }, { passive: true });
+
+  /* ===== carrusel infinito (3 copias + salto invisible) ===== */
+  const originals = $$('.sight-card', track), N = originals.length;
+  let cards = [], active = N;
+  track.replaceChildren();
+  for (let set_ = 0; set_ < 3; set_++) originals.forEach((c, i) => { const k = c.cloneNode(true); k.dataset.i = set_ * N + i; if (set_ !== 1) { k.setAttribute('aria-hidden', 'true'); k.tabIndex = -1; } track.appendChild(k); });
+  cards = $$('.sight-card', track);
+  const dlg = $('#foto');
+  function openPhoto(c) { $('[data-dimg]').src = c.dataset.foto; $('[data-dimg]').alt = c.getAttribute('aria-label'); $('[data-dcap]').textContent = c.getAttribute('aria-label'); dlg.showModal(); }
+  cards.forEach(c => {
+    const pick = () => { const i = +c.dataset.i; if (i === active && c.dataset.foto) openPhoto(c); else { active = i; updateSlider(); if (c.dataset.foto && window.matchMedia('(hover:none)').matches === false) {} } };
+    c.addEventListener('click', pick);
+    c.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); c.dataset.foto ? openPhoto(c) : pick(); } });
   });
-
-  /* ---- visor de fotos ---- */
-  const dlg = $('#foto'), dimg = $('[data-dimg]'), dcap = $('[data-dcap]');
-  $$('[data-foto]').forEach(b => b.addEventListener('click', () => { dimg.src = b.dataset.foto; dimg.alt = b.dataset.t; dcap.textContent = b.dataset.t; dlg.showModal ? dlg.showModal() : window.open(b.dataset.foto, '_blank', 'noopener'); }));
+  function updateSlider() {
+    const w = cards[0].offsetWidth, gap = parseFloat(getComputedStyle(track).columnGap || '0');
+    set('--sights-shift', `${-(w + gap) * active}px`);
+    cards.forEach(c => c.classList.toggle('is-active', +c.dataset.i === active));
+  }
+  function jump(i) { track.classList.add('is-jumping'); active = i; updateSlider(); requestAnimationFrame(() => requestAnimationFrame(() => track.classList.remove('is-jumping'))); }
+  track.addEventListener('transitionend', e => { if (e.target !== track) return; if (active >= N * 2) jump(active - N); else if (active < N) jump(active + N); });
+  $('.sight-prev').addEventListener('click', () => { active--; updateSlider(); });
+  $('.sight-next').addEventListener('click', () => { active++; updateSlider(); });
+  // deslizar con el dedo
+  let tx = null;
+  track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) { active += dx < 0 ? 1 : -1; updateSlider(); } tx = null; });
   $('[data-close]').addEventListener('click', () => dlg.close());
-  const fi = $('#ficha');
-  $$('[data-ficha]').forEach(b => b.addEventListener('click', () => {
-    $('[data-fimg]').src = b.dataset.img; $('[data-fimg]').alt = b.dataset.t;
-    $('[data-ft]').textContent = b.dataset.t; $('[data-fq]').textContent = b.dataset.q; $('[data-fw]').textContent = b.dataset.who;
-    fi.showModal ? fi.showModal() : window.open(b.dataset.img, '_blank', 'noopener');
-    if (window.gsap && !reduce) { gsap.from('.fi-pic img', { scale: .7, opacity: 0, duration: .8, ease: 'expo.out' }); gsap.from('.fi-txt > *', { y: 30, opacity: 0, duration: .7, ease: 'expo.out', stagger: .07, delay: .1 }); }
-  }));
-  $$('[data-fclose]').forEach(b => b.addEventListener('click', () => fi.close()));
-  fi.addEventListener('click', e => { if (e.target === fi) fi.close(); });
   dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 
-  const go = () => {
-    if (!window.gsap || !window.ScrollTrigger) return;
-    gsap.registerPlugin(ScrollTrigger);
-    let lenis;
-    if (!reduce && window.Lenis) {
-      lenis = new Lenis({ lerp: 0.09 });
-      lenis.on('scroll', ScrollTrigger.update);
-      gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0);
-    }
-    $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => { const t = $(a.getAttribute('href')); if (!t) return; e.preventDefault(); lenis ? lenis.scrollTo(t, { duration: 1.4 }) : t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); }));
-    gsap.to('.progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: true } });
-    ScrollTrigger.create({ trigger: '#casa', start: 'top 80', onEnter: () => $('#nav').classList.add('solid'), onLeaveBack: () => $('#nav').classList.remove('solid') });
-    if (reduce) return;
+  // enlaces a la carta: bajan hasta donde las tarjetas ya están dentro
+  $$('[data-to-carta]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); scrollTo({ top: section.offsetTop + 3600, behavior: reduceMotion.matches ? 'auto' : 'smooth' }); }));
 
-    // pantalla de carga: cuenta hasta 100 y se abre como un telón
-    const ld = $('.loader'), pct = $('[data-pct]');
-    if (ld) {
-      const cnt = { v: 0 }; ld.style.animation = 'none';
-      gsap.timeline()
-        .to(cnt, { v: 100, duration: 1.5, ease: 'power2.inOut', onUpdate: () => { pct.textContent = Math.round(cnt.v); } })
-        .to('.ld-in', { y: -40, opacity: 0, duration: .5, ease: 'power2.in' })
-        .to(ld, { clipPath: 'inset(0 0 100% 0)', duration: 1, ease: 'expo.inOut' }, '-=.15')
-        .set(ld, { display: 'none' });
-    }
-    // portada
-    gsap.fromTo('.hero-photo', { scale: 1.2 }, { scale: 1.04, duration: 2.6, ease: 'expo.out' });
-    const ln = $('.hero h1 .ln>span'); ln.innerHTML = [...ln.textContent].map(c => c === ' ' ? ' ' : `<span class="ch">${c}</span>`).join('');
-    if (fine) $('.hero').addEventListener('mousemove', e => gsap.to('.hero-photo', { x: (e.clientX / innerWidth - .5) * -34, y: (e.clientY / innerHeight - .5) * -22, duration: 1.2, ease: 'power3.out' }));
-    gsap.from('.hero h1 .ch', { yPercent: 110, rotate: 10, duration: 1.2, ease: 'expo.out', stagger: .05, delay: .2 });
-    gsap.from('.hero h1 small, .hero-side > *', { opacity: 0, y: 24, duration: .9, ease: 'expo.out', stagger: .08, delay: .55 });
+  // entradas de las secciones de abajo
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } }), { threshold: .15 }) : null;
+  $$('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
 
-    // escena: la cámara entra por el arco del rótulo y todo se vuelve terracota
-    const tl = gsap.timeline({ scrollTrigger: { trigger: '.hero', start: 'top top', end: '+=170%', pin: true, scrub: 1 } });
-    tl.to('.hero-photo', { scale: 4.2, ease: 'power2.in', duration: 1 }, 0)
-      .to('.hero-copy', { opacity: 0, y: 80, duration: .35, ease: 'power1.in' }, 0)
-      .to('.hero-shade', { opacity: 0, duration: .4 }, 0)
-      .to('.sheet', { opacity: 1, ease: 'power1.in', duration: .4 }, .55)
-      .from('.sheet span', { scale: .75, opacity: 0, duration: .4 }, .75);
-
-    // entradas
-    $$('[data-r]').forEach(sec => {
-      const kids = sec.children.length && !sec.matches('h2,p,figure') ? [...sec.children] : [sec];
-      gsap.from(kids, { y: 32, opacity: 0, duration: 1, ease: 'expo.out', stagger: .08, scrollTrigger: { trigger: sec, start: 'top 86%', once: true } });
-    });
-    $$('[data-par]').forEach(img => gsap.fromTo(img, { yPercent: -5, scale: 1.12 }, { yPercent: 5, ease: 'none', scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } }));
-    gsap.fromTo('[data-move]', { yPercent: -8 }, { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.terraza', start: 'top bottom', end: 'bottom top', scrub: true } });
-    gsap.from('.paper', { rotateX: -16, y: 80, transformPerspective: 1400, transformOrigin: '50% 0', ease: 'power2.out', scrollTrigger: { trigger: '.paper', start: 'top 95%', end: 'top 45%', scrub: 1 } });
-    gsap.from('#p1 li', { y: 24, opacity: 0, duration: .7, ease: 'expo.out', stagger: .06, scrollTrigger: { trigger: '.paper', start: 'top 60%', once: true } });
-    const tracks = $$('.band .track');
-    ScrollTrigger.create({ start: 0, end: 'max', onUpdate: s => { const v = gsap.utils.clamp(-12, 12, s.getVelocity() / 280); tracks.forEach(t => gsap.to(t, { skewX: -v, duration: .4, overwrite: true })); } });
-    $$('[data-count]').forEach(el => { const o = { v: 0 }; gsap.to(o, { v: +el.dataset.count, duration: 1.6, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true }, onUpdate: () => { el.textContent = o.v.toFixed(1).replace('.', ','); } }); });
-    gsap.from('[data-hours] li', { x: -30, opacity: 0, duration: .8, ease: 'expo.out', stagger: .05, scrollTrigger: { trigger: '[data-hours]', start: 'top 85%', once: true } });
-    gsap.from('[data-bye] span', { yPercent: 100, duration: 1.3, ease: 'expo.out', stagger: .12, scrollTrigger: { trigger: '[data-bye]', start: 'top 92%', once: true } });
-
-    // titulares palabra a palabra
-    $$('h2:not(.sr)').forEach(h => {
-      h.innerHTML = h.textContent.trim().split(/\s+/).map(w => `<span class="w"><span>${w}</span></span>`).join(' ');
-      gsap.from(h.querySelectorAll('.w>span'), { yPercent: 115, duration: 1.1, ease: 'expo.out', stagger: .06, scrollTrigger: { trigger: h, start: 'top 88%', once: true } });
-    });
-    // un día en la plaza: escena fija con reloj
-    const dia = $('#dia'), mos = $$('.mo', dia), clock = $('[data-clock]');
-    dia.classList.add('cine');
-    gsap.set(mos.slice(1), { clipPath: 'inset(100% 0% 0% 0%)' });
-    const clk = { t: 7 }, hhmm = t => Math.floor(t) + ':' + String(Math.floor((t % 1) * 4) * 15).padStart(2, '0');
-    const dt = gsap.timeline({ scrollTrigger: { trigger: dia, start: 'top top', end: '+=320%', pin: true, scrub: 1 } });
-    dt.to(clk, { t: 23.75, ease: 'none', duration: 4, onUpdate: () => { clock.textContent = hhmm(clk.t); } }, 0)
-      .to('.dia-bar i', { scaleX: 1, ease: 'none', duration: 4 }, 0)
-      .fromTo(mos[0].querySelector('img'), { scale: 1.15 }, { scale: 1, ease: 'none', duration: 1 }, 0);
-    mos.forEach((m, k) => { if (!k) return;
-      dt.to(mos[k - 1].querySelector('div'), { y: -60, opacity: 0, duration: .35 }, k - .55)
-        .to(m, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'power2.inOut', duration: .6 }, k - .5)
-        .from(m.querySelector('img'), { scale: 1.35, ease: 'power2.out', duration: 1 }, k - .5)
-        .from(m.querySelectorAll('h3,b,p'), { y: 70, opacity: 0, stagger: .06, duration: .35 }, k - .15);
-    });
-    // escaparate: los platos caen sobre la repisa
-    gsap.from('.piece', { y: -120, opacity: 0, rotate: i => (i % 2 ? 4 : -4), duration: 1.1, ease: 'bounce.out', stagger: .12, scrollTrigger: { trigger: '.shelf', start: 'top 80%', once: true } });
-    // cerveza de bodega: la caña se llena
-    gsap.fromTo('.glass img', { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', ease: 'none', scrollTrigger: { trigger: '.glass', start: 'top 85%', end: 'center 45%', scrub: true } });
-    gsap.from('.glass img', { scale: 1.25, ease: 'none', scrollTrigger: { trigger: '.glass', start: 'top bottom', end: 'bottom top', scrub: true } });
-    // arroces: cada línea entra desde un lado
-    $$('.rice li').forEach((li, i) => gsap.from(li, { xPercent: i % 2 ? 30 : -30, opacity: 0, ease: 'power2.out', scrollTrigger: { trigger: li, start: 'top 98%', end: 'top 70%', scrub: 1 } }));
-    // opinión principal: se enciende palabra a palabra
-    const q = $('.quotes blockquote:first-child p');
-    q.innerHTML = q.textContent.split(' ').map(w => `<span>${w}</span>`).join(' ');
-    gsap.fromTo(q.children, { opacity: .18 }, { opacity: 1, stagger: .1, ease: 'none', scrollTrigger: { trigger: q, start: 'top 85%', end: 'top 40%', scrub: true } });
-    if (fine) {
-      // la foto del plato sigue al ratón en la carta
-      const fl = document.createElement('img'); fl.className = 'float'; fl.alt = ''; document.body.appendChild(fl);
-      gsap.set(fl, { xPercent: -50, yPercent: -50, scale: .6 });
-      const fx = gsap.quickTo(fl, 'x', { duration: .5, ease: 'power3' }), fy = gsap.quickTo(fl, 'y', { duration: .5, ease: 'power3' });
-      $$('.dishes li').forEach(li => { const v = li.querySelector('.ver'); if (!v) return;
-        li.addEventListener('mouseenter', () => { fl.src = v.dataset.foto; gsap.to(fl, { opacity: 1, scale: 1, rotate: -3, duration: .4, ease: 'back.out(2)' }); });
-        li.addEventListener('mousemove', e => { fx(e.clientX + 170); fy(e.clientY); });
-        li.addEventListener('mouseleave', () => gsap.to(fl, { opacity: 0, scale: .6, rotate: 0, duration: .3 }));
-      });
-      // cursor propio
-      const cur = document.createElement('div'); cur.className = 'cur'; document.body.appendChild(cur);
-      const cx = gsap.quickTo(cur, 'x', { duration: .25, ease: 'power3' }), cy = gsap.quickTo(cur, 'y', { duration: .25, ease: 'power3' });
-      addEventListener('mousemove', e => { cx(e.clientX); cy(e.clientY); cur.classList.toggle('big', !!e.target.closest('a,button,figure,.dishes li')); });
-    }
-    if (fine) $$('.btn,.ver').forEach(b => {
-      b.addEventListener('mousemove', e => { const r = b.getBoundingClientRect(); gsap.to(b, { x: (e.clientX - r.left - r.width / 2) * .22, y: (e.clientY - r.top - r.height / 2) * .32, duration: .4 }); });
-      b.addEventListener('mouseleave', () => gsap.to(b, { x: 0, y: 0, duration: .6, ease: 'elastic.out(1,.4)' }));
-    });
-    addEventListener('load', () => ScrollTrigger.refresh());
-  };
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(go); else go();
+  updateSlider(); requestTick();
 })();
 </script>
 </body>
